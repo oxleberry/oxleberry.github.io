@@ -2,14 +2,15 @@
 /* BASE STYLES ========================================= */
 
 * {
-    box-sizing: border-box;
-    font-size: 16px;
+  box-sizing: border-box;
+  font-size: 16px;
+  /* text-align: center; */
 }
 
 /* .clearfix::after {
-display: table:
-clear: both;
-content: "";
+  display: table:
+  clear: both;
+  content: "";
 } */
 
 body {
@@ -58,16 +59,50 @@ header {
     justify-content: space-between; */
 }
 
-.flex-container div {
+.flex-container > div {
     width: 50%;
 }
 
+#project-tiles img {
+    width: 48%;
+}
+
+#project-details {
+    width: 48%;
+    height: 80vh;
+    background-color: tomato;
+}
+
+form {
+    display: inline-block;
+    width: 50%;
+}
+
+.contact {
+    background-color: pink;
+}
+
+/* multiple images stacked in a container*/
+/* body {
+    url(logo.png) bottom center no-repeat,
+    url(background-pattern.png) repeat;
+} */
+
+.detail-img-container {
+    background: url(../images/test.png);
+    background-size: cover;
+    padding: 2em;
+    margin: 0 auto;
+    width: 80%;
+    height: 300px;
+    background-color: pink;
+}
 
 /* MEDIA QUERIES ========================================= */
 /*
 @media screen and (max-width: 425px){
-html {
-font-size: 12pt;
+    html {
+        font-size: 12pt;
+    }
 }
-}
-*/
+ */

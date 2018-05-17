@@ -24,7 +24,7 @@
     <!-- My jQuery files -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
     <!-- My JS files -->
-    <script src="app.js" defer></script>
+    <script src="js/app.js" defer></script>
 
     <title>Sharon Paz</title>
 </head>
@@ -51,27 +51,62 @@
         <section id="projects">
             <h3>Projects</h3>
             <div class="flex-container">
-            </div>
-            <div id="project-details">
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <h3>About</h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </section>
-    <section id="contact">
-        <h3>Contact</h3>
-    </section>
-</main>
 
-<footer>
-    <nav>
-        <a href="#">github</a>
-        <!-- <a href="#"><i class="fab fa-instagram">instagram</i></a> -->
-    </nav>
-    <p><small>&copy;2018 Sharon Paz</small></p>
-</footer>
+                <div id="project-tiles">
+                    <img src="images/test.png">
+                    <img src="images/test.png">
+                    <img src="images/test.png">
+                    <img src="images/test.png">
+                    <img src="images/test.png">
+                    <img src="images/test.png">
+                    <img src="images/test.png">
+                    <img src="images/test.png">
+                </div>
+                <div id="project-details">
+
+                    <!-- TEST SAMPLE -->
+                    <h3>Project Title<h3>
+                    <div class="detail-img-container"></div>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h3>About</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+        <section id="contact">
+            <h3>Contact</h3>
+            <form class="contact">
+                <div class="row">
+                    <div>
+                        <input id="first-name" type="text" name="first-name" placeholder="First Name">
+                    </div>
+                    <div>
+                        <input id="last-name" type="text" name="last-name" placeholder="Last Name">
+                    </div>
+                    <div>
+                        <input id="emailAddress" type="email" name="email-address" placeholder="Email Address">
+                    </div>
+                    <div>
+                        <textarea placeholder="comment"></textarea>
+                    </div>
+                    <div>
+                        <input class="contact-button" type="submit" value="Connect">
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="#">github</a>
+            <!-- <a href="#"><i class="fab fa-instagram">instagram</i></a> -->
+        </nav>
+        <p><small>&copy;2018 Sharon Paz</small></p>
+    </footer>
 
 
 </body>
