@@ -8,9 +8,12 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Averia+Libre|Lato|Raleway|Tajawal|Ubuntu" rel="stylesheet">
 
-    <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <!-- Slick .JS file -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
@@ -20,6 +23,10 @@
 
     <!-- My jQuery files -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
+
+    <!-- Slick JS files -->
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
+
     <!-- My JS files -->
     <script src="js/app.js" defer></script>
 
@@ -32,7 +39,7 @@
       <img class="bg-img" src="images/abstract-art-astronomy-220071.jpg" alt="Joshua Trees">
     </div>
 
-    <header id="carousel">
+    <header>
         <!-- <div class="hamburger"><a href="#"><i class="fas fa-bars"></i></a></div> -->
         <div class="sticky-header">
             <nav>
@@ -43,14 +50,30 @@
         </div>
         <div>
             <h1>Sharon Paz</h1>
-            <h3>Creative Coder</h3>
+            <h2>Creative Coder</h2>
         </div>
     </header>
 
     <main>
 
+        <section id="highlights">
+            <h2>Highlights Carousel</h2>
+
+            <div class="carousel">
+              <img src="images/adventure-arid-daylight-847402.jpg">
+              <img src="images/art-biology-black-706924.jpg">
+              <img src="images/astrology-astronomy-beautiful-566169.jpg">
+            </div>
+
+        </section>
+        <section id="about">
+            <div>
+                <h2>About</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </section>
         <section>
-            <h3>Projects</h3>
+            <h2>Projects</h2>
             <div class="flex-container">
 
                 <div id="project-tiles">
@@ -62,7 +85,7 @@
                 <div id="project-details">
 
                     <!-- TEST SAMPLE -->
-                    <h3>Project Title<h3>
+                    <h3>Project Title</h3>
                     <div class="detail-img-container"></div>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     <ul>
@@ -74,17 +97,17 @@
                 </div>
             </div>
         </section>
-        <section id="about">
-            <div class="about-me">
-                <h3>About</h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="testamonials">
+        <section id="testamonials">
+
+            <div>
+                <h2>Testamonials</h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <small>notes from friend</small>
+            </div>
+
         </section>
         <section id="contact">
-            <h3>Contact</h3>
+            <h2>Contact</h2>
             <form class="contact">
                 <div class="row">
                     <div>

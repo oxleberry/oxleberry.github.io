@@ -3,7 +3,7 @@
 
 * {
   box-sizing: border-box;
-  font-size: 16px;
+  /* font-size: 16px; */
   /* text-align: center; */
 }
 
@@ -47,6 +47,13 @@ li {
     list-style: none;
 }
 
+p {
+    text-transform: none;
+}
+
+h2 {
+    padding-top: 2em;
+}
 
 /* HEADER ========================================= */
 
@@ -63,7 +70,7 @@ header {
     background-color: transparent;
 }
 
-nav {
+header nav {
     background: #514740;
     height: 3em;
     display: flex;
@@ -86,6 +93,19 @@ header h1 {
     flex-direction: row;
 }
 
+
+/* HIGHLIGHTS ========================================= */
+
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel img {
+    width: 100%;
+}
+
+
 /* PROJECTS ========================================= */
 
 
@@ -93,43 +113,27 @@ header h1 {
     width: 50%;
 }
 
+#project-details {
+    /* e16d43 = orange */
+    width: 48%;
+    height: 80vh;
+    background-color: #e16d43;
+    border-radius: 2em;
+    padding: 2em;
+}
+
 #project-tiles img {
     width: 48%;
 }
 
-#project-details {
-    width: 48%;
-    height: 80vh;
-    background-color: #e16d43; orange
-    border-radius: 20px;
+#project-details ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-/* ABOUT ========================================= */
-
-#about p {
-    margin: 0;
-    padding: 3em;
-}
-
-/* CONTACT ========================================= */
-
-form {
-    display: inline-block;
-    width: 50%;
-}
-
-.contact {
-    background-color: #e16d43; orange
-    padding: 5em;
-    border-radius: 20px;
-}
-
-.contact .row div {
-    width: 100%;
-}
-
-.contact .row {
-    padding: 2em;
+#project-details li {
+    padding: 0 2em;
 }
 
 /* multiple images stacked in a container*/
@@ -148,14 +152,44 @@ form {
     height: 300px;
 }
 
+
+/* ABOUT ========================================= */
+
+#about p {
+    margin: 0;
+    padding: 3em;
+}
+
+/* CONTACT ========================================= */
+
+form {
+    display: inline-block;
+    width: 50%;
+}
+
+.contact {
+    /* e16d43 = orange */
+    background-color: #e16d43;
+    padding: 2em;
+    border-radius: 20px;
+}
+
+.contact .row div {
+    width: 100%;
+}
+
+.contact .row {
+    padding: 2em;
+}
+
 input, textarea {
     margin: .5em auto;
-    padding: .6em .6em;
+    padding: 1em 1em;
     font-weight: bold;
     border: 2px solid #e16c43;
     background-color: rgba(255, 255, 255, .5);
     color: #514740;
-    border-radius: 10px;
+    border-radius: 8px;
     width: 100%;
 }
 
@@ -166,6 +200,16 @@ textarea {
 .contact-button {
     width: 100px;
 }
+
+/* FOOTER ========================================= */
+
+footer {
+    margin: 3em auto;
+}
+
+/* footer a {
+    font-size: 3em;
+} */
 
 /* MEDIA QUERIES ========================================= */
 /*
