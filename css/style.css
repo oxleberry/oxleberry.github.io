@@ -11,13 +11,21 @@
   display: table:
   clear: both;
   content: "";
+
+  .	font-family: 'Averia Libre', cursive;
+  .	font-family: 'Lato', sans-serif;
+  .	font-family: 'Raleway', sans-serif;
+  .	font-family: 'Ubuntu', sans-serif;
+  .	font-family: 'Tajawal', sans-serif;
 } */
 
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Averia Libre', sans-serif;
     text-align: center;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 section {
@@ -26,38 +34,60 @@ section {
 }
 
 section:nth-child(2n + 1) {
-    background: honeydew;
+    background-color: #514740; brown
+    padding: 3em;
+}
+
+section:nth-child(2n + 0) {
+    background-color: transparent;
+    padding: 3em;
 }
 
 li {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-    padding: 1em;
-}
-
-#about p {
-    margin: 0;
-    padding: 3em;
-}
 
 /* HEADER ========================================= */
 
-header {
-    height: 100vh;
-    background-color: lightblue;
+.bg-img{
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  height: 110vh;
+  /* width: 100vw; */
 }
 
-/* PROJECTS ========================================= */
+header {
+    height: 100vh;
+    background-color: transparent;
+}
+
+nav {
+    background: #514740;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 1em;
+    color: #fff;
+}
+
+header h1 {
+    margin-top: 3em;
+    font-size: 5em;
+}
 
 .flex-container {
     display: flex;
     flex-direction: row;
-    /* margin: 0 2em;
-    justify-content: space-between; */
 }
+
+/* PROJECTS ========================================= */
+
 
 .flex-container > div {
     width: 50%;
@@ -70,8 +100,18 @@ header {
 #project-details {
     width: 48%;
     height: 80vh;
-    background-color: tomato;
+    background-color: #e16d43; orange
+    border-radius: 20px;
 }
+
+/* ABOUT ========================================= */
+
+#about p {
+    margin: 0;
+    padding: 3em;
+}
+
+/* CONTACT ========================================= */
 
 form {
     display: inline-block;
@@ -79,7 +119,17 @@ form {
 }
 
 .contact {
-    background-color: pink;
+    background-color: #e16d43; orange
+    padding: 5em;
+    border-radius: 20px;
+}
+
+.contact .row div {
+    width: 100%;
+}
+
+.contact .row {
+    padding: 2em;
 }
 
 /* multiple images stacked in a container*/
@@ -89,13 +139,32 @@ form {
 } */
 
 .detail-img-container {
-    background: url(../images/test.png);
+    /* background: url(../images/test.png); */
+    background: url(../images/astrology-astronomy-beautiful-566169.jpg);
     background-size: cover;
     padding: 2em;
     margin: 0 auto;
     width: 80%;
     height: 300px;
-    background-color: pink;
+}
+
+input, textarea {
+    margin: .5em auto;
+    padding: .6em .6em;
+    font-weight: bold;
+    border: 2px solid #e16c43;
+    background-color: rgba(255, 255, 255, .5);
+    color: #514740;
+    border-radius: 10px;
+    width: 100%;
+}
+
+textarea {
+    height: 200px;
+}
+
+.contact-button {
+    width: 100px;
 }
 
 /* MEDIA QUERIES ========================================= */

@@ -1,9 +1,3 @@
-<!--
-1. Use boiler plate
-2. Add meta tag for viewport
-3. Add CSS styles: normalize.css, reset.css, Bootstrap, style.css. -->
-
-
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -11,12 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Averia+Libre|Lato|Raleway|Tajawal|Ubuntu" rel="stylesheet">
+
     <!-- Bootstrap CDN -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Font Awesome CDN -->
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 
     <!-- My CSS styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -30,37 +27,37 @@
 </head>
 <body>
 
+    <!-- Background hero image -->
+    <div>
+      <img class="bg-img" src="images/abstract-art-astronomy-220071.jpg" alt="Joshua Trees">
+    </div>
+
     <header id="carousel">
-        <!-- Hamburger Bars -->
-        <!-- <i class="fas fa-bars"></i> -->
-        <nav>
-            <a href="#">projects</a>
-            <a href="#">about</a>
-            <a href="#">contact</a>
-        </nav>
+        <!-- <div class="hamburger"><a href="#"><i class="fas fa-bars"></i></a></div> -->
+        <div class="sticky-header">
+            <nav>
+                <a href="#">projects</a>
+                <a href="#">about</a>
+                <a href="#">contact</a>
+            </nav>
+        </div>
         <div>
             <h1>Sharon Paz</h1>
-            <p>Creative Coder</p>
-            <div class="carousel-container">
-
-            </div>
+            <h3>Creative Coder</h3>
         </div>
     </header>
 
     <main>
-        <section id="projects">
+
+        <section>
             <h3>Projects</h3>
             <div class="flex-container">
 
                 <div id="project-tiles">
-                    <img src="images/test.png">
-                    <img src="images/test.png">
-                    <img src="images/test.png">
-                    <img src="images/test.png">
-                    <img src="images/test.png">
-                    <img src="images/test.png">
-                    <img src="images/test.png">
-                    <img src="images/test.png">
+                    <img src="images/art-biology-black-706924.jpg">
+                    <img src="images/art-biology-black-706924.jpg">
+                    <img src="images/art-biology-black-706924.jpg">
+                    <img src="images/art-biology-black-706924.jpg">
                 </div>
                 <div id="project-details">
 
@@ -68,13 +65,23 @@
                     <h3>Project Title<h3>
                     <div class="detail-img-container"></div>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <ul>
+                        <li>skills</li>
+                        <li>skills</li>
+                        <li>skills</li>
+                    </ul>
 
                 </div>
             </div>
         </section>
         <section id="about">
-            <h3>About</h3>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="about-me">
+                <h3>About</h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="testamonials">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <small>notes from friend</small>
         </section>
         <section id="contact">
             <h3>Contact</h3>
@@ -90,10 +97,10 @@
                         <input id="emailAddress" type="email" name="email-address" placeholder="Email Address">
                     </div>
                     <div>
-                        <textarea placeholder="comment"></textarea>
+                        <textarea placeholder="Comment"></textarea>
                     </div>
                     <div>
-                        <input class="contact-button" type="submit" value="Connect">
+                        <input class="contact-button" type="submit" value="Submit">
                     </div>
                 </div>
             </form>
@@ -102,8 +109,8 @@
 
     <footer>
         <nav>
-            <a href="#">github</a>
-            <!-- <a href="#"><i class="fab fa-instagram">instagram</i></a> -->
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
         </nav>
         <p><small>&copy;2018 Sharon Paz</small></p>
     </footer>
