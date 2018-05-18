@@ -1,15 +1,7 @@
 
 
-// • Tweak carousel of project images
 // • Add functionality for projects to live update to portfolio
 // • Add functionality for testamonials to rotate
-// • Add smooth scrolling to sections
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//   var elems = document.querySelectorAll('.carousel');
-//   var instances = M.Carousel.init(elems, options);
-// });
 
 
 // var projectTiles = [];
@@ -24,8 +16,6 @@
 
 
 $(function(){
-    console.log('test');
-    // $('.carousel').carousel();
 
     $('.carousel').slick();
 
@@ -34,5 +24,30 @@ $(function(){
 //   slidesToShow: 3,
 //   slidesToScroll: 1
 // });
+
+// SMOOTH SCROLLING
+ // https://stackoverflow.com/questions/31832227/jquery-smooth-scrolling-anchor-navigation
+    $('header a').on('click', function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        $target = $(target);
+        // determines if the link clicked goes back the "home"
+        // (top of the page) or not.
+        var offsetNum;
+        if (target === '#home') {
+            offsetNum = 300;
+        } else {
+            offsetNum = 0;
+        }
+        // smooth scroll
+        $('html, body').animate({
+            scrollTop: ($target.offset().top - offsetNum)
+        }, 900);
+    });
+
+
+
+    console.log('test');
+
 
 });  // end of document.ready
