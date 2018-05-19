@@ -19,6 +19,12 @@
   .	font-family: 'Tajawal', sans-serif;
 } */
 
+/* multiple images stacked in a container*/
+/* body {
+    url(logo.png) bottom center no-repeat,
+    url(background-pattern.png) repeat;
+} */
+
 body {
     margin: 0;
     padding: 0;
@@ -50,10 +56,11 @@ li {
 
 p {
     text-transform: none;
+    font-family: 'Raleway', sans-serif;
 }
 
 h2 {
-    padding-top: 1em;
+    padding-top: .8em;
 }
 
 /* HEADER ========================================= */
@@ -135,47 +142,63 @@ header h1 {
 /* PROJECTS ========================================= */
 
 
-.flex-container > div {
-    width: 50%;
+#project-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: .4em;
+    width: 33%;
+}
+
+#project-tiles img {
+    max-width: 64%;
+    margin: 2px;
+}
+
+.project-thumbnail-img {
+    background: url(../images/astrology-astronomy-beautiful-566169.jpg) center;
+    background-size: cover;
+    /* height: 33%; */
+    width: 47%;
+    margin: 2px;
 }
 
 #project-details {
     /* e16d43 = orange */
-    width: 48%;
-    height: 80vh;
-    background-color: #e16d43;
+    width: 67%;
+    height: 70vh;
+    background-color: #fff;
     border-radius: 2em;
-    padding: 2em;
+    padding: 1em;
+    color: black;
 }
 
-#project-tiles img {
-    width: 48%;
+.detail-container {
+    display: flex;
+    margin: 0 5em;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #project-details ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #project-details li {
-    padding: 0 2em;
+    padding-right: 3em;
 }
-
-/* multiple images stacked in a container*/
-/* body {
-    url(logo.png) bottom center no-repeat,
-    url(background-pattern.png) repeat;
-} */
 
 .detail-img-container {
     /* background: url(../images/test.png); */
-    background: url(../images/astrology-astronomy-beautiful-566169.jpg);
+    background: url(../images/astrology-astronomy-beautiful-566169.jpg) center;
     background-size: cover;
     padding: 2em;
+    height: 40%;
+    width: 60%;
     margin: 0 auto;
-    width: 80%;
-    height: 300px;
 }
 
 
@@ -235,6 +258,7 @@ footer {
 
 footer a {
     font-size: 2em;
+    padding: 1em;
 }
 
 /* MEDIA QUERIES ========================================= */
