@@ -28,26 +28,25 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Averia Libre', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
 }
 
 section {
-    background: pink;
-    height: 100vh;
+    /* height: 100vh; */
+    overflow: hidden;
+    padding: 3em;
 }
 
 section:nth-child(2n + 1) {
     /* #514740 = brown */
     background-color: #514740;
-    padding: 3em;
 }
 
 section:nth-child(2n + 0) {
     background-color: transparent;
-    padding: 3em;
 }
 
 li {
@@ -56,11 +55,28 @@ li {
 
 p {
     text-transform: none;
-    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
 }
 
 h2 {
     padding-top: .8em;
+    letter-spacing: 1em;
+}
+
+/* h3 {
+    padding-top: .8em;
+    letter-spacing: .2em;
+} */
+
+button {
+    padding: 1em 2em;
+        text-transform: uppercase;
+        font-size: 1.6em;
+        box-shadow: 0 0 15px rgb(225, 107, 67);
+        border: 3px solid rgb(225, 108, 67);
+        background-color: rgb(116, 100, 88);
+        color: #3f3732;
+        font-weight: bold;
 }
 
 /* HEADER ========================================= */
@@ -70,18 +86,18 @@ h2 {
   z-index: -1;
   top: 0;
   left: 0;
-  height: 110vh;
-  /* width: 100vw; */
+  min-height: 100vh;
+  width: 100vw;
 }
 
 header {
     height: 80vh;
     background-color: transparent;
+    font-family: 'Averia Libre', sans-serif;
 }
 
 header nav {
     z-index: 1;
-    /* background: #514740; */
     background: #645951;
     height: 4em;
     display: flex;
@@ -91,7 +107,6 @@ header nav {
     margin: 0 auto;
     width: 100vw;
     box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, .2);
-
 }
 
 a {
@@ -99,21 +114,12 @@ a {
     padding: 1.4em 2.5em;
     color: #fff;
 
-    /* Alt option */
-    /* text-decoration: none;
-    padding: 1em 2.5em;
-    font-size: 1.5em;
-    color: #37312d;
-    text-shadow: 2px 1px 2px #8c837c; */
 }
 
 a:hover {
     /* color: #f2c9ba; */
     color: #e0b3a3;
 
-    /* Alt option */
-    /* color: #e0b3a3;
-    text-shadow: 2px 1px 2px rgba(0, 0, 0, .2); */
 }
 
 header h1 {
@@ -121,11 +127,9 @@ header h1 {
     font-size: 5em;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
+ul {
+    padding-left: 0;
 }
-
 
 /* HIGHLIGHTS ========================================= */
 
@@ -136,70 +140,80 @@ header h1 {
 
 .carousel img {
     width: 100%;
+    overflow: hidden;
 }
-
 
 /* PROJECTS ========================================= */
 
+/* #project {
+    height: 100vh;
+} */
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2em;
+    /* height: 100vh; */
+}
 
 #project-tiles {
+
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
     margin-right: .4em;
     width: 33%;
 }
 
 #project-tiles img {
-    max-width: 64%;
+    max-width: 80%;
     margin: 2px;
 }
 
-.project-thumbnail-img {
-    background: url(../images/astrology-astronomy-beautiful-566169.jpg) center;
+.project-img {
+    background: url(../images/monument-img1.png) center;
     background-size: cover;
-    /* height: 33%; */
-    width: 47%;
-    margin: 2px;
+    height: 100%;
+    width: 100%;
+    margin: 2px auto;
 }
 
 #project-details {
     /* e16d43 = orange */
-    width: 67%;
-    height: 70vh;
-    background-color: #fff;
+    width: 70%;
+    height: 80%;
+    background-color: transparent;
     border-radius: 2em;
     padding: 1em;
-    color: black;
+    color: #fff;
 }
 
 .detail-container {
     display: flex;
-    margin: 0 5em;
+    margin: 0 auto;
     height: 100%;
+    width: 80%;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-#project-details ul {
+.detail-container ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#project-details li {
-    padding-right: 3em;
+.detail-container li {
+    padding: 0 1em;
+    font-size: 1.2em;
 }
 
-.detail-img-container {
-    /* background: url(../images/test.png); */
-    background: url(../images/astrology-astronomy-beautiful-566169.jpg) center;
-    background-size: cover;
-    padding: 2em;
-    height: 40%;
-    width: 60%;
-    margin: 0 auto;
-}
+/* .detail-container p {
+    display: inline-block;
+    width: 30%:
+    font-size: 1.2em;
+} */
 
 
 /* ABOUT ========================================= */

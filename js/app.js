@@ -3,15 +3,7 @@
 // • Add functionality for projects to live update to portfolio
 // • Add functionality for testamonials to rotate
 
-
-// var projectTiles = [];
-// var projectDetail = [{
-//     title: 'Project #1',
-//     img: 'images/oxle_0.png',
-//     description: 'Project Description',
-//     skills: ['html', 'css','js']
-// }
-// ];
+// generates from project list .js.
 
 
 
@@ -46,8 +38,29 @@ $(function(){
     });
 
 
+    // $('#project-tiles div').eq(0).on('mouseenter', function (){
+    //     // var bg = $(this).css('background-image');
+    //     // bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
+    //     // $('.detail-container').clear();
+    //
+    //     var title = projectDetails[0].title;
+    //     var imgEl = projectDetails[0].imgDetail;
+    //     var description = projectDetails[0].description;
+    //     var skills = projectDetails[0].skills;
+    //     // console.log(skills);
+    //     $(skills).each(function (idx){
+    //         $('.detail-container ul').append(`<li>${skills[idx]}</li>`);
+    //
+    //     });
+    //
+    //     $('.detail-container h3').text(title);
+    //     // $('.detail-img').css('background-image', 'url(images/monument-img1.png)');
+    //     $('.detail-img').css('background-image', `url(${imgEl})`);
+    //     $('.detail-container p').text(description);
+    //
+    // });
 
-    console.log('test');
+
 
 
 });  // end of document.ready
