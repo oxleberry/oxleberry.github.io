@@ -1,5 +1,4 @@
 
-// • fix Carousel
 // • responseive hamburger menu
 // • mobile responsiveness
 // • readme file
@@ -25,6 +24,7 @@ function getTestamonials() {
 $(function(){
 
     // Carousel using Slick
+    // https://github.com/kenwheeler/slick/    
     $('.slick-carousel').slick({
         autoplay: true,
         autoplaySpeed: 3000,

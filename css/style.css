@@ -19,12 +19,6 @@ content: "";
 .	font-family: 'Tajawal', sans-serif;
 } */
 
-/* multiple images stacked in a container*/
-/* body {
-url(logo.png) bottom center no-repeat,
-url(background-pattern.png) repeat;
-} */
-
 body {
     margin: 0;
     padding: 0;
@@ -67,11 +61,6 @@ h2 {
     letter-spacing: .8em;
 }
 
-/* h3 {
-padding-top: .8em;
-letter-spacing: .2em;
-} */
-
 button {
     padding: 1em 2em;
     text-transform: uppercase;
@@ -91,14 +80,6 @@ col-container {
 
 /* HEADER ========================================= */
 
-/* .bg-img{
-position: fixed;
-z-index: -1;
-top: 0;
-left: 0;
-min-height: 100vh;
-width: 100vw;
-} */
 
 header {
     height: 100vh;
@@ -215,10 +196,6 @@ ul {
     left: 0;
 }
 
-/* .slick-dots li{
-    font-size: 3em;
-} */
-
 .slick-next:before,
 .slick-prev:before {
     font-size: 27px;
@@ -255,14 +232,6 @@ ul {
 
 
 /* PROJECTS ========================================= */
-
-/*  {
-height: 100vh;
-} */
-
-/* .project section:nth-child(2n + 0) {
-background-color: #6e505d;
-} */
 
 .project-container {
     display: flex;
@@ -314,7 +283,6 @@ background-color: #6e505d;
     color: #33222b;
 }
 
-
 .detail-container {
     display: flex;
     margin: 0 auto;
@@ -335,13 +303,6 @@ background-color: #6e505d;
     padding: 0 1em;
     font-size: 1.2em;
 }
-
-
-/* .detail-container p {
-display: inline-block;
-width: 30%:
-font-size: 1.2em;
-} */
 
 
 /* ABOUT & TESTAMONIALS========================================= */
@@ -414,11 +375,8 @@ input::placeholder, textarea::placeholder {
 /* FOOTER ========================================= */
 
 footer {
-    /* margin: 3em auto; */
     padding: 1em;
     position: relative;
-    /* height: 5em; */
-    /* top: 40px; */
     background: url(../images/abstract-art-astronomy-220071.jpg);
     background-position: top;
     background-size: cover;
@@ -428,7 +386,6 @@ footer a {
     font-size: 2em;
     padding: 1.4em 1em;
 }
-
 
 
 /* ANIMATIONS ========================================= */
@@ -448,10 +405,44 @@ footer a {
 } */
 
 /* MEDIA QUERIES ========================================= */
-/*
-@media screen and (max-width: 425px){
-html {
-font-size: 12pt;
+
+@media screen and (max-width: 800px){
+    html {
+        font-size: 12pt;
+    }
+
+    .slick-carousel {
+        width: 90%;
+    }
+
+    #about {
+        height: auto;
+    }
+
+    .tile {
+        width: 100%;
+        padding: 0;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-visual {
+        height: 20em;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .project-details {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
 }
-}
-*/
