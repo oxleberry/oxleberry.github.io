@@ -76,8 +76,8 @@ button {
     padding: 1em 2em;
     text-transform: uppercase;
     font-size: 1.6em;
-    box-shadow: 0 0 15px rgb(225, 107, 67);
-    border: 3px solid rgb(225, 108, 67);
+    /* box-shadow: 0 0 15px rgb(225, 107, 67);
+    border: 3px solid rgb(225, 108, 67); */
     background-color: rgba(255, 255, 255, 0.2);
     /* background-image: linear-gradient(rgba(255, 0, 0, 0.2),rgba(255, 0, 0, 0.5); */
     color: #3f3732;
@@ -202,6 +202,7 @@ ul {
 
 .carousel img {
     width: 100%;
+    max-height: 80%;
     overflow: hidden;
 }
 
@@ -273,10 +274,11 @@ background-color: #6e505d;
 }
 
 .img1 {
-    background: url(../images/monument-img1.png);
+    background: url(../images/monument-img1.png) top center;
 }
 .img2 {
-    background: url(../images/shopping-cart-img1.png);
+    background: url(../images/shopping-cart-img1.png) top right;
+    background-size: cover;
 }
 
 .project-details {
@@ -318,25 +320,40 @@ font-size: 1.2em;
 } */
 
 
-/* ABOUT ========================================= */
+/* ABOUT & TESTAMONIALS========================================= */
 
 #about p {
     margin: 0 auto;
     padding: 5em;
 }
 
+#about, #testamonials {
+    background: url(../images/abstract-art-astronomy-220071.jpg);
+}
+
+#testamonials {
+    min-height: 20em;
+}
+
+#testamonials h3{
+    font-size: 3em;
+    font-family: 'Averia Libre', sans-serif;
+}
+
+#testamonials p{
+    font-size: 1.5em;
+    font-family: 'Averia Libre', sans-serif;
+}
+
 /* CONTACT ========================================= */
 
 form {
     display: inline-block;
-    width: 50%;
+    width: 40em;
 }
 
 .contact {
-    /* e16d43 = orange */
-    background-color: #e16d43;
-    padding: 2em;
-    border-radius: 20px;
+    /* max-width: 35em; */
 }
 
 .contact .row div {
@@ -351,10 +368,9 @@ input, textarea {
     margin: .5em auto;
     padding: 1em 1em;
     font-weight: bold;
-    border: 2px solid #e16c43;
+    border: 2px solid transparent;
     background-color: rgba(255, 255, 255, .5);
     color: #514740;
-    border-radius: 8px;
     width: 100%;
 }
 
@@ -365,6 +381,11 @@ textarea {
 .contact-button {
     width: 100px;
 }
+
+input::placeholder, textarea::placeholder {
+  color: #514740
+}
+
 
 /* FOOTER ========================================= */
 

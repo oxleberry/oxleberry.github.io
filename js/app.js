@@ -1,10 +1,27 @@
 
 
-// • Add functionality for testamonials to rotate
 
+var nextTest = 0;
+var testLeng = testamonials.length;
 
+// to grab the next Testomonial in rotation
+function getTestamonials() {
+    $('#testamonials div div').empty();
+    if (nextTest === testLeng){
+        nextTest = 0;
+    }
+    $('#testamonials div div').hide();
+    $('#testamonials div div').append(
+        `<h3>${testamonials[nextTest].praise}</h3><p>${testamonials[nextTest].name}</p>`
+    );
+    $('#testamonials div div').fadeIn(1000);
+    nextTest++;
+}
+
+// DOCUMENT.READY
 $(function(){
 
+    // Carousel using Slick
     $('.carousel').slick();
 
     // $('.carousel').slick({
@@ -12,6 +29,9 @@ $(function(){
     //   slidesToShow: 3,
     //   slidesToScroll: 1
     // });
+
+    // TESTAMONIALS
+    setInterval(getTestamonials, 6000);
 
     // SMOOTH SCROLLING
     // https://stackoverflow.com/questions/31832227/jquery-smooth-scrolling-anchor-navigation
@@ -38,7 +58,6 @@ $(function(){
     $(window).scroll(function (){
         // windowScroll holds the current position of where the current scroll is
         var windowScroll = $(this).scrollTop();
-        console.log(windowScroll);
 
         // $('.bg-box').css({
         //     'transform' : 'translate(0px, -'+ windowScroll /50 + '%)'
@@ -50,10 +69,9 @@ $(function(){
             'transform' : 'translate(0px, '+ windowScroll /1.9 + '%)'
         });
         $('.foreground').css({ 'transform' : 'translate(0px, -'+ windowScroll /14 + '%)'
+        });
+
     });
-
-});
-
 
 
 

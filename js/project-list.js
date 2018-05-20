@@ -27,3 +27,18 @@ var projectDetails = [
     }
 
 ];
+
+var testamonials = [
+    {
+        name: '-fellow cohort member',
+        praise: '"Persistent!"'
+    },
+    {
+        name: '-study buddy',
+        praise: '"Detailed!"'
+    },
+    {
+        name: '-pair-programmer',
+        praise: '"Enthusisatic!"'
+    }
+];
