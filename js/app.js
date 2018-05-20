@@ -23,8 +23,13 @@ function getTestamonials() {
 // DOCUMENT.READY
 $(function(){
 
+    // NAV BAR for small screens
+    $('.hamburger').on('click', function() {
+        $('.nav-collapse').slideToggle();
+    });
+
     // Carousel using Slick
-    // https://github.com/kenwheeler/slick/    
+    // https://github.com/kenwheeler/slick/
     $('.slick-carousel').slick({
         autoplay: true,
         autoplaySpeed: 3000,
@@ -59,10 +64,7 @@ $(function(){
     $(window).scroll(function (){
         // windowScroll holds the current position of where the current scroll is
         var windowScroll = $(this).scrollTop();
-
-        // $('.bg-box').css({
-        //     'transform' : 'translate(0px, -'+ windowScroll /50 + '%)'
-        // });
+        // MIDGROUND = LOGO
         $('.midground').css({
             'transform' : 'translate(0px, '+ windowScroll /2.5 + '%)'
         });
@@ -70,9 +72,9 @@ $(function(){
             'transform' : 'translate(0px, '+ windowScroll /1.9 + '%)'
         });
         $('.foreground').css({ 'transform' : 'translate(0px, -'+ windowScroll /14 + '%)'
-        });
-
     });
+
+});
 
 
 
