@@ -1,7 +1,7 @@
 
-// • responseive hamburger menu
-// • mobile responsiveness
-// • readme file
+
+// • nav bar that highlights when scrolling on that corresponding page
+
 
 var nextTest = 0;
 var testLeng = testamonials.length;
