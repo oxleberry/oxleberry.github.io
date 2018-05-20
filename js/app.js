@@ -1,5 +1,8 @@
 
-
+// • fix Carousel
+// • responseive hamburger menu
+// • mobile responsiveness
+// • readme file
 
 var nextTest = 0;
 var testLeng = testamonials.length;
@@ -22,20 +25,18 @@ function getTestamonials() {
 $(function(){
 
     // Carousel using Slick
-    $('.carousel').slick();
-
-    // $('.carousel').slick({
-    //   infinite: true,
-    //   slidesToShow: 3,
-    //   slidesToScroll: 1
-    // });
+    $('.slick-carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true
+    });
 
     // TESTAMONIALS
     setInterval(getTestamonials, 6000);
 
     // SMOOTH SCROLLING
     // https://stackoverflow.com/questions/31832227/jquery-smooth-scrolling-anchor-navigation
-    $('header a').on('click', function(e) {
+    $('header a, #highlights a').on('click', function(e) {
         e.preventDefault();
         var target = $(this).attr('href');
         $target = $(target);
