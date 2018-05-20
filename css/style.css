@@ -2,27 +2,27 @@
 /* BASE STYLES ========================================= */
 
 * {
-  box-sizing: border-box;
-  /* font-size: 16px; */
-  /* text-align: center; */
+    box-sizing: border-box;
+    /* font-size: 16px; */
+    /* text-align: center; */
 }
 
 /* .clearfix::after {
-  display: table:
-  clear: both;
-  content: "";
+display: table:
+clear: both;
+content: "";
 
-  .	font-family: 'Averia Libre', cursive;
-  .	font-family: 'Lato', sans-serif;
-  .	font-family: 'Raleway', sans-serif;
-  .	font-family: 'Ubuntu', sans-serif;
-  .	font-family: 'Tajawal', sans-serif;
+.	font-family: 'Averia Libre', cursive;
+.	font-family: 'Lato', sans-serif;
+.	font-family: 'Raleway', sans-serif;
+.	font-family: 'Ubuntu', sans-serif;
+.	font-family: 'Tajawal', sans-serif;
 } */
 
 /* multiple images stacked in a container*/
 /* body {
-    url(logo.png) bottom center no-repeat,
-    url(background-pattern.png) repeat;
+url(logo.png) bottom center no-repeat,
+url(background-pattern.png) repeat;
 } */
 
 body {
@@ -46,11 +46,15 @@ section:nth-child(2n + 1) {
 }
 
 section:nth-child(2n + 0) {
-    background-color: transparent;
+    /* background-color: transparent; */
+    background-color: #382530;
+    /* background-color: rgba(56,37,48,.5); */
 }
 
 li {
     list-style: none;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
 }
 
 p {
@@ -59,41 +63,47 @@ p {
 }
 
 h2 {
-    padding-top: .8em;
-    letter-spacing: 1em;
+    /* padding-top: .8em; */
+    letter-spacing: .8em;
 }
 
 /* h3 {
-    padding-top: .8em;
-    letter-spacing: .2em;
+padding-top: .8em;
+letter-spacing: .2em;
 } */
 
 button {
     padding: 1em 2em;
-        text-transform: uppercase;
-        font-size: 1.6em;
-        box-shadow: 0 0 15px rgb(225, 107, 67);
-        border: 3px solid rgb(225, 108, 67);
-        background-color: rgb(116, 100, 88);
-        color: #3f3732;
-        font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    box-shadow: 0 0 15px rgb(225, 107, 67);
+    border: 3px solid rgb(225, 108, 67);
+    background-color: rgba(255, 255, 255, 0.2);
+    /* background-image: linear-gradient(rgba(255, 0, 0, 0.2),rgba(255, 0, 0, 0.5); */
+    color: #3f3732;
+    font-weight: bold;
+}
+
+col-container {
+    display: flex;
+    flex-direction: column;
 }
 
 /* HEADER ========================================= */
 
-.bg-img{
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  min-height: 100vh;
-  width: 100vw;
-}
+/* .bg-img{
+position: fixed;
+z-index: -1;
+top: 0;
+left: 0;
+min-height: 100vh;
+width: 100vw;
+} */
 
 header {
-    height: 80vh;
+    height: 100vh;
     background-color: transparent;
-    font-family: 'Averia Libre', sans-serif;
+    /* font-family: 'Averia Libre', sans-serif; */
 }
 
 header nav {
@@ -131,6 +141,58 @@ ul {
     padding-left: 0;
 }
 
+/* //www.youtube.com/watch?v=WTZpNAbz3jg&index=2&list=PLqGj3iMvMa4IyCbhul-PdeiDqmh4ooJzk */
+/* PARALLAX */
+.bg-box {
+    position: relative;
+    height: 100vh;
+    top: 40px;
+    background: url(../images/abstract-art-astronomy-220071.jpg);
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.midground {
+    height: 100px;
+    width: 100%;
+    background-image: url(../images/SP_title.png);
+    background-size: 22em;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    filter: invert(100%);
+}
+
+.foreground {
+    width: 100%;
+    height: 25em;
+    background-image: url(../images/flower_sakura.svg);
+    background-size: 35em;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 14%;
+    top: 31em;
+    filter: invert(100%) blur(2px);
+}
+
+.background {
+    width: 100%;
+    height: 8em;
+    background-image: url(../images/flower_geo.svg);
+    background-size: 5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -25%;
+    top: 12em;
+    filter: invert(100%) blur(1px);
+}
+
 /* HIGHLIGHTS ========================================= */
 
 .carousel {
@@ -143,21 +205,54 @@ ul {
     overflow: hidden;
 }
 
+/* ABOUT ========================================= */
+
+#about {
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#about div div{
+    font-size: 1.5em;
+    align-self: center;
+}
+
+.tile {
+    width: 30%;
+    padding: 2em;
+}
+
+#about img {
+    margin: 1em;
+    filter: invert(100%);
+    /* animation: spinner 5s 1; */
+}
+
+.spin {
+    animation: spinner 5s 1;
+    /* animation: flower-opacity 2s 1;     */
+}
+
+
 /* PROJECTS ========================================= */
 
-/* #project {
-    height: 100vh;
+/*  {
+height: 100vh;
+} */
+
+/* .project section:nth-child(2n + 0) {
+background-color: #6e505d;
 } */
 
 .project-container {
     display: flex;
     flex-direction: row;
     padding-top: 2em;
+    justify-content: center;
     /* height: 100vh; */
 }
 
-#project-tiles {
-
+.project-visual {
     display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
@@ -165,20 +260,26 @@ ul {
     width: 33%;
 }
 
-#project-tiles img {
+.project-visual img {
     max-width: 80%;
     margin: 2px;
 }
 
 .project-img {
-    background: url(../images/monument-img1.png) center;
     background-size: cover;
     height: 100%;
     width: 100%;
     margin: 2px auto;
 }
 
-#project-details {
+.img1 {
+    background: url(../images/monument-img1.png);
+}
+.img2 {
+    background: url(../images/shopping-cart-img1.png);
+}
+
+.project-details {
     /* e16d43 = orange */
     width: 70%;
     height: 80%;
@@ -209,10 +310,11 @@ ul {
     font-size: 1.2em;
 }
 
+
 /* .detail-container p {
-    display: inline-block;
-    width: 30%:
-    font-size: 1.2em;
+display: inline-block;
+width: 30%:
+font-size: 1.2em;
 } */
 
 
@@ -267,19 +369,44 @@ textarea {
 /* FOOTER ========================================= */
 
 footer {
-    margin: 3em auto;
+    /* margin: 3em auto; */
+    padding: 1em;
+    position: relative;
+    /* height: 5em; */
+    /* top: 40px; */
+    background: url(../images/abstract-art-astronomy-220071.jpg);
+    background-position: top;
+    background-size: cover;
 }
 
 footer a {
     font-size: 2em;
-    padding: 1em;
+    padding: 1.4em 1em;
 }
+
+
+
+/* ANIMATIONS ========================================= */
+
+/* @keyframes spinner {
+0% { transform: scale(.2) rotate(360deg);
+100% { transform: scale(1) rotate(360deg); }
+} */
+
+@keyframes spinner {
+    100% { transform: rotate(360deg); }
+}
+
+/* @keyframes flower-opacity {
+0% { transform: scale(.2); }
+100% { transform: scale(1); }
+} */
 
 /* MEDIA QUERIES ========================================= */
 /*
 @media screen and (max-width: 425px){
-    html {
-        font-size: 12pt;
-    }
+html {
+font-size: 12pt;
 }
- */
+}
+*/

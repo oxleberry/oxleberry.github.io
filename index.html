@@ -25,119 +25,166 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     <!-- Slick JS files -->
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
 
     <!-- My JS files -->
     <!-- <script type="text/javascript" src="js/project-list.js" defer></script> -->
     <script type="text/javascript" src="js/app.js" defer></script>
 
+    <!-- OXLE FAVICON -->
+    <link rel="icon" type="image/png" href="images/flower_sakura.png">
+
     <title>Sharon Paz</title>
 </head>
 <body>
 
-    <!-- Background hero image -->
-    <div>
-      <img class="bg-img" src="images/abstract-art-astronomy-220071.jpg" alt="abstract lens flares backdrop">
-    </div>
-
     <header>
         <!-- <div class="hamburger"><a href="#"><i class="fas fa-bars"></i></a></div> -->
-        <div id="home" class="sticky-header">
-            <nav>
+        <div id="home">
+            <nav class="sticky-header">
                 <a href="#home">home</a>
-                <a href="#projects">projects</a>
+                <a href="#top-of-projects">projects</a>
                 <a href="#about">about</a>
                 <a href="#contact">contact</a>
             </nav>
+
+            <div class="bg-box">
+                <div class="background"></div>
+                <div class="midground"></div>
+                <div class="foreground"></div>
+            </div>
+
+
         </div>
+        <!-- <div>
+        <h1>Sharon Paz</h1>
+        <h3>Creative Coder</h3>
+    </div> -->
+</header>
+
+<main>
+
+    <section id="highlights">
+        <h2>Highlights Carousel</h2>
+
+        <div class="carousel">
+            <img src="images/adventure-arid-daylight-847402.jpg">
+            <img src="images/art-biology-black-706924.jpg">
+            <img src="images/astrology-astronomy-beautiful-566169.jpg">
+        </div>
+
+    </section>
+    <section id="about">
+        <h2>About</h2>
+
+        <div class="project-container">
+            <div class="col-container tile">
+                <h4>Animated <br> Gif maker</h4>
+            </div>
+            <div><i class="far fa-arrow-alt-circle-right"></i></div>
+            <div class="col-container tile">
+                <h4>Screen Printing<br>Color Seperator</h4>
+            </div>
+            <div><i class="far fa-arrow-alt-circle-right"></i></div>
+            <div class="col-container tile">
+                <h4>Web Developer</h4>
+            </div>
+        </div>
+
+        <div class="project-container">
+            <img src="images/flower_blossom.svg">
+            <img src="images/flower_blossom.svg">
+            <img src="images/flower_blossom.svg">
+        </div>
+
+
+    </section>
+    <!-- PROJECT #1 -->
+    <section id="top-of-projects" class="projects">
+        <h2>Semantic Html & CSS Challenge</h2>
+        <div class="project-container">
+            <div class="project-visual">
+                <div class="project-img img1"></div>
+            </div>
+            <div class="project-details">
+                <div class="detail-container">
+                    <p> Provided just a style sheet, the assignment was to create all of the html and css from scratch. Using semantic HTML to structure the page, created ease and order, which simplified the coding process. The incorportion of flex box in the nested layout, the picture galleries and form fields are collapseable for a responsive user experience.</p>
+                    <a href="#"><button>See the Code</button></a>
+                    <ul>
+                        <li>Semantic HTML</li>
+                        <li>CSS</li>
+                        <li>Flexbox</li>
+                        <li>Media Queries</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PROJECT #2 -->
+    <section class="projects">
+        <h2>Shopping Cart Challenge</h2>
+        <div class="project-container">
+            <div class="project-visual">
+                <div class="project-img img2"></div>
+            </div>
+            <div class="project-details">
+                <div class="detail-container">
+                    <p>In this project, used vanilla javascript to access elements in the DOM. All the items in the shopping stores and shopping carts are dynamically created based on event listeners that when activated, pulls data from a JS object, and returns the corresponding information.</p>
+                    <a href="#"><button>See the Code</button></a>
+                    <ul>
+                        <li>Vanilla JavaScript</li>
+                        <li>DOM Manipulation</li>
+                        <li>Object Notation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="testamonials">
+
         <div>
-            <h1>Sharon Paz</h1>
-            <h3>Creative Coder</h3>
+            <h2>Testamonials</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <small>notes from friend</small>
         </div>
-    </header>
 
-    <main>
-
-        <section id="highlights">
-            <h2>Highlights Carousel</h2>
-
-            <div class="carousel">
-              <img src="images/adventure-arid-daylight-847402.jpg">
-              <img src="images/art-biology-black-706924.jpg">
-              <img src="images/astrology-astronomy-beautiful-566169.jpg">
-            </div>
-
-        </section>
-        <section id="about">
-            <h2>About</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
-        <section id="projects">
-            <h2>Semantic Html & CSS Challenge</h2>
-            <div class="project-container">
-
-                <div id="project-tiles">
-                    <div class="project-img"></div>
-                    <!-- <div class="project-thumbnail-img"></div>
-                    <div class="project-thumbnail-img"></div> -->
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form class="contact">
+            <div class="row">
+                <div>
+                    <input id="first-name" type="text" name="first-name" placeholder="First Name">
                 </div>
-                <div id="project-details">
-
-                    <div class="detail-container">
-                        <p> Provided just a style sheet, the assignment was to create all of the html and css from scratch. Using semantic HTML to structure the page, created ease and order, which simplified the coding process. The incorportion of flex box in the nested layout, the picture galleries and form fields are collapseable for a responsive user experience.</p>
-                        <a href="#"><button>See the Code</button></a>
-
-                        <ul>
-                            <li>Semantic HTML</li>
-                            <li>CSS</li>
-                            <li>Flexbox</li>
-                            <li>Media Queries</li>
-                        </ul>
-                    </div>
+                <div>
+                    <input id="last-name" type="text" name="last-name" placeholder="Last Name">
+                </div>
+                <div>
+                    <input id="emailAddress" type="email" name="email-address" placeholder="Email Address">
+                </div>
+                <div>
+                    <textarea placeholder="Comment"></textarea>
+                </div>
+                <div>
+                    <input class="contact-button" type="submit" value="Submit">
                 </div>
             </div>
-        </section>
-        <section id="testamonials">
+        </form>
+    </section>
+</main>
 
-            <div>
-                <h2>Testamonials</h2>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <small>notes from friend</small>
-            </div>
-
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <form class="contact">
-                <div class="row">
-                    <div>
-                        <input id="first-name" type="text" name="first-name" placeholder="First Name">
-                    </div>
-                    <div>
-                        <input id="last-name" type="text" name="last-name" placeholder="Last Name">
-                    </div>
-                    <div>
-                        <input id="emailAddress" type="email" name="email-address" placeholder="Email Address">
-                    </div>
-                    <div>
-                        <textarea placeholder="Comment"></textarea>
-                    </div>
-                    <div>
-                        <input class="contact-button" type="submit" value="Submit">
-                    </div>
-                </div>
-            </form>
-        </section>
-    </main>
-
-    <footer>
+<footer>
+    <div class="bg-footer">
         <nav>
             <a href="#"><i class="fab fa-github"></i></a>
             <a href="#"><i class="fab fa-linkedin"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
         </nav>
         <p><small>&copy;2018 Sharon Paz</small></p>
-    </footer>
+    </div>
+</footer>
 
 
 </body>
