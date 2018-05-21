@@ -37,7 +37,7 @@
 
 ### Code Samples
 #### Testimonials Code
-![Testimonials Code](./week2project.gif)
+![Week 2 Project - Example](./code-testimonials.png)
 
 #### Parallax Code
-![Parallax Code](./week2project.gif)
+![Week 2 Project - Example](./code-parallax.png)
