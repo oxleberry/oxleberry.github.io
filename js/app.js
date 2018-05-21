@@ -1,11 +1,8 @@
 
 
-// • nav bar that highlights when scrolling on that corresponding page
-
-
+// Testomonial
 var nextTest = 0;
 var testLeng = testamonials.length;
-
 // to grab the next Testomonial in rotation
 function getTestamonials() {
     $('#testamonials div div').empty();
@@ -57,10 +54,15 @@ $(function(){
         $('html, body').animate({
             scrollTop: ($target.offset().top - offsetNum)
         }, 900);
+
+        $('a').removeClass('active');
+        $(this).addClass('active');
+
+        console.log('toggled');
     });
 
-    /* //www.youtube.com/watch?v=WTZpNAbz3jg&index=2&list=PLqGj3iMvMa4IyCbhul-PdeiDqmh4ooJzk */
     // PARALLAX
+    /* //www.youtube.com/watch?v=WTZpNAbz3jg&index=2&list=PLqGj3iMvMa4IyCbhul-PdeiDqmh4ooJzk */
     $(window).scroll(function (){
         // windowScroll holds the current position of where the current scroll is
         var windowScroll = $(this).scrollTop();
@@ -72,10 +74,8 @@ $(function(){
             'transform' : 'translate(0px, '+ windowScroll /1.9 + '%)'
         });
         $('.foreground').css({ 'transform' : 'translate(0px, -'+ windowScroll /14 + '%)'
+        });
     });
-
-});
-
 
 
 });  // end of document.ready

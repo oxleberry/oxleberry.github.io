@@ -37,17 +37,21 @@
     <title>Sharon Paz</title>
 </head>
 <body>
-    
+
     <header>
         <div id="home">
-            <!-- <div><a class="hamburger" href="#"><i class="fas fa-bars"></i></a></div> -->
             <nav class="sticky-header flex-mobile">
-                <a class="hamburger" href="#"><i class="fas fa-bars"></i></a>
-                <a class="nav-collapse" href="#home">home</a>
+                <div class="nav-logo">
+                    <a class="nav-left" href="#">Sharon Paz</a>
+                    <a class="nav-right hamburger hide"><i class="fas fa-bars"></i></a>
+                </div>
+                <a class="nav-collapse opacity" href="#">.</a>
+                <a class="nav-collapse active" href="#home">home</a>
                 <a class="nav-collapse" href="#about">about</a>
                 <a class="nav-collapse" href="#top-of-projects">projects</a>
                 <a class="nav-collapse" href="#contact">contact</a>
             </nav>
+            <!-- background images for parallax scroll -->
             <div class="bg-box">
                 <div class="background"></div>
                 <div class="midground"></div>
@@ -57,14 +61,12 @@
     </header>
 
     <main>
-
         <section id="highlights">
             <h2>Highlights Carousel</h2>
             <div class="slick-carousel">
                 <a href='#top-of-projects'><img src="images/proj1_caro.png"></a>
                 <a href='#top-of-projects'><img src="images/proj1_caro_2.png"></a>
                 <a href='#project2'><img src="images/proj2_caro.png"></a>
-                <!-- <img src="images/astrology-astronomy-beautiful-566169.jpg"> -->
             </div>
         </section>
 
@@ -83,7 +85,7 @@
                     <h4>Web Developer</h4>
                 </div>
             </div>
-
+            <!-- flower icons -->
             <div class="project-container">
                 <img class="hide-on-mobile" src="images/flower_blossom.svg">
                 <img class="hide-on-mobile" src="images/flower_blossom.svg">
@@ -168,9 +170,9 @@
     <footer>
         <div class="bg-footer">
             <nav>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/oxleberry"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sharon-paz-oxleberry/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/oxleberry/"><i class="fab fa-instagram"></i></a>
             </nav>
             <p><small>&copy;2018 Sharon Paz</small></p>
         </div>
